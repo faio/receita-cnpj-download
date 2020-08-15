@@ -84,7 +84,7 @@ def start_threads():
         sleep(tsleep)
 
     while dload_threads:
-        dload_threads = [x.getName() for x in threading.enumerate() if "dload" == x.getName()]
+        dload_threads = [x.getName() for x in threading.enumerate() if thread_name == x.getName()]
         sleep(tsleep)
 
 
